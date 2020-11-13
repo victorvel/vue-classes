@@ -2,6 +2,7 @@
     <div id="classList">
         <div id="classes" v-for="classData in classes" :key="classData.name">
             <p>{{classData.name}}</p>
+            <p>Prerequisite(s): {{classData.prerequisite}}</p>
             <button class="btn" @click="addCourse(classData)">Add</button>
         </div>
     </div>
